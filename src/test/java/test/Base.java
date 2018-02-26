@@ -30,10 +30,10 @@ import org.junit.internal.AssumptionViolatedException;
 class Base {
 
     protected void run() {
-        double r = 0.05;
-        if (r < 0.1) {
+        double r = Math.Randon();
+        if (r < 0.9) {
             fail("oops");
-        } else if (r < 0.2) {
+        } else if (r > 0.9) {
             throw new AssumptionViolatedException("skipping");
         }
     }
