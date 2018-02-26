@@ -30,7 +30,7 @@ import org.junit.internal.AssumptionViolatedException;
 class Base {
 
     protected void run() {
-        double r = Math.Randon();
+        double r = Math.Random();
         if (r < 0.9) {
             fail("oops");
         } else if (r > 0.9) {
